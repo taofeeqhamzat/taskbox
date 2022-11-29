@@ -2,6 +2,7 @@ import { Provider } from "react-redux";
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 import PropTypes from "prop-types";
 
+import Task from "../../Task/Task";
 import * as TaskStories from "../../Task/Task.stories";
 
 // A super-simple mock of the state of the store
@@ -50,5 +51,9 @@ export const pinnedtasks = [
 ];
 
 Mockstore.propTypes = {
-  taskboxState: PropTypes.objectOf(MockedState)
+  taskboxState: PropTypes.shape({
+    tasks: PropTypes.arrayOf(Task.propTypes.task).isRequired,
+    status: PropTypes.string,
+    error: PropTypes.any
+  })
 };
