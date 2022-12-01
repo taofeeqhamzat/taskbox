@@ -1,6 +1,4 @@
-import { render, screen } from "./util/util";
-
-import { MockedState } from "./util/util";
+import { render, screen, MockedState } from "../../lib/util/util";
 
 import TaskList from "./TaskList";
 

@@ -1,7 +1,7 @@
 import React from "react";
 
 import TaskList from "./TaskList";
-import { Mockstore, MockedState } from './util/util';
+import { Mockstore, MockedState } from '../../lib/util/util';
 
 // A super-simple mock of the state of the store, "MockedState" imported from module
 // A super-simple mock of a redux store, "Mockestore" imported from module

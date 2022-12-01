@@ -3,8 +3,8 @@ import { configureStore, createSlice } from "@reduxjs/toolkit";
 import PropTypes from "prop-types";
 import { render } from "@testing-library/react";
 
-import Task from "../../Task/Task";
-import * as TaskStories from "../../Task/Task.stories";
+import Task from "../../components/Task/Task";
+import * as TaskStories from "../../components/Task/Task.stories";
 
 // A super-simple mock of the state of the store
 const MockedState = {
