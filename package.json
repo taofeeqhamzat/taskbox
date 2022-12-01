@@ -25,13 +25,14 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006",
     "storybook-docs": "start-storybook --docs --no-manager-cache",
+    "build": "react-scripts build",
     "build-storybook": "build-storybook",
     "build-storybook-docs": "build-storybook --docs",
+    "test": "react-scripts test",
+    "test-storybook": "test-storybook",
+    "eject": "react-scripts eject",
     "init-msw": "msw init public/"
   },
   "eslintConfig": {
